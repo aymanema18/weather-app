@@ -1,0 +1,5 @@
+when user input a city name 
+    fetch the city weather data
+    display the appropriate weather data to the user
+
+
