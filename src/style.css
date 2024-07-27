@@ -25,7 +25,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0 7vw;
+    padding: 0 15%;
 }
 
 .logo {
@@ -58,10 +58,13 @@ li {
 
 .inp-n-wt-div {
     background-color: var(--light-red);
-    width: 250px;
     padding: 17px;
     box-shadow: 0px 7px 15px rgb(0, 0, 0, 0.3);
     border-radius: 15px;
+}
+
+.input-div {
+    width: 250px;
 }
 
 form {
@@ -91,4 +94,75 @@ form {
 
 button {
     cursor: pointer;
+}
+
+.weather-main {
+    display: flex;
+    padding: 7% 15%;
+    gap: 30px;
+}
+
+.icon-div {
+    display: flex;
+    color: white;
+    flex: 2;
+}
+
+.icon-div,
+.data-div {
+    min-height: 190px;
+}
+
+.data-div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 40px;
+    flex: 1;
+    gap: 15px;
+}
+
+.icon-container {
+    width: 200px;
+}
+
+.icon {
+    width: 100%;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.sun-icons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-n-ws {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
