@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 15%;
+    gap: 60px;
 }
 
 .logo {
@@ -67,19 +68,27 @@ li {
     width: 250px;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     color: white;
     align-items: flex-start;
 }
 
-#city-name {
-    width: 100%;
+#city-name,
+#nav-city-name {
     padding: 8px 10px;
     border: none;
     border-radius: 7px;
     font-family: var(--font-group);
+}
+
+#nav-city-name {
+    width: 190px;
+}
+
+#city-name {
+    width: 100%;
 }
 
 .search-btn,
@@ -139,7 +148,6 @@ li {
 
 .icon {
     width: 100%;
-    align-self: center;
 }
 
 h1 {

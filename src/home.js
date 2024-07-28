@@ -1,22 +1,24 @@
 function showHome() {
     const main = document.querySelector('main');
     const div = document.createElement('div');
-    const form = document.createElement('form');
+    const form = document.createElement('div');
     const label = document.createElement('label');
     const input = document.createElement('input');
     const btn = document.createElement('button');
-    const navInput = document.querySelector('#nav-search-btn');
+    const navInput = document.querySelector('#nav-city-name');
     const navBtn = document.querySelector('.nav-search-btn');
     main.classList = '';
     main.innerHTML = '';
     main.classList.add('home-main');
     div.classList.add('input-div');
     div.classList.add('inp-n-wt-div');
+    form.classList.add('form');
     label.setAttribute('for', 'city-name');
     input.setAttribute('id', 'city-name');
     btn.classList.add('search-btn');
     label.textContent = 'City:';
     btn.textContent = 'Search';
+    btn.setAttribute('type', 'button');
     form.appendChild(label);
     form.appendChild(input);
     form.appendChild(btn);
