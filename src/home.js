@@ -5,6 +5,8 @@ function showHome() {
     const label = document.createElement('label');
     const input = document.createElement('input');
     const btn = document.createElement('button');
+    const navInput = document.querySelector('#nav-search-btn');
+    const navBtn = document.querySelector('.nav-search-btn');
     main.classList = '';
     main.innerHTML = '';
     main.classList.add('home-main');
@@ -20,6 +22,11 @@ function showHome() {
     form.appendChild(btn);
     div.appendChild(form);
     main.appendChild(div);
+
+    if (navBtn && navInput) {
+        navBtn.remove();
+        navInput.remove();
+    }
 }
 
 export { showHome };

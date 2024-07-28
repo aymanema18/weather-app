@@ -82,18 +82,27 @@ form {
     font-family: var(--font-group);
 }
 
-.search-btn {
+.search-btn,
+.nav-search-btn {
     background-color: var(--dark-blue);
     border: none;
     color: white;
-    align-self: flex-end;
-    margin-top: 10px;
     padding: 0.5em 1em;
     border-radius: 7px;
+    cursor: pointer;
 }
 
-button {
+li {
     cursor: pointer;
+}
+
+.nav-search-btn {
+    margin-left: 10px;
+}
+
+.search-btn {
+    align-self: flex-end;
+    margin-top: 10px;
 }
 
 .weather-main {
@@ -106,6 +115,7 @@ button {
     display: flex;
     color: white;
     flex: 2;
+    gap: 25px;
 }
 
 .icon-div,
@@ -120,6 +130,7 @@ button {
     padding: 40px;
     flex: 1;
     gap: 15px;
+    max-width: 300px;
 }
 
 .icon-container {
@@ -128,6 +139,7 @@ button {
 
 .icon {
     width: 100%;
+    align-self: center;
 }
 
 h1 {
@@ -159,6 +171,8 @@ p {
 .sun-icons-div {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
 }
 
 .h-n-ws {
