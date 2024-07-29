@@ -8,8 +8,7 @@ async function getWeather(name) {
         console.log(data);
         return data;
     } catch (error) {
-        console.log('from catch');
-        console.error(error);
+        // do nothing
     }
 }
 
